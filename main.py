@@ -12,7 +12,7 @@ def hello():
 @app.route('/newname/<name>')
 def newroute(name):
     """parameter"""
-    return "this was passed in: %s" % name
+    return "My name is %s" % name
 
 
 @app.route('/town/<town_name>')
