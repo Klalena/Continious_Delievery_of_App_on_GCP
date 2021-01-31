@@ -15,6 +15,11 @@ def newroute(name):
     return "this was passed in: %s" % name
 
 
+@app.route('/town/<town_name>')
+def town(town_name):
+    """parameter"""
+    return "this was passed in: %s" % town_name
+
 @app.errorhandler(500)
 def server_error(e):
     logging.exception('An error occurred during a request.')
