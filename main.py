@@ -18,7 +18,7 @@ def newroute(name):
 @app.route('/town/<town_name>')
 def town(town_name):
     """parameter"""
-    return "this was passed in: %s" % town_name
+    return "I am loacted in : %s" % town_name
 
 @app.errorhandler(500)
 def server_error(e):
